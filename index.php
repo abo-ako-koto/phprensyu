@@ -130,11 +130,58 @@ function myTodaystring(bool $aaaa){
     return date('m').'月'.date('d').'日';
     }
 }
-echo '<br>';
-echo '<br>';
+echo '<br>'.'<br>';
 echo myTodaystring(false); //変数に置き換えることも可能
 
-echo '<br>';
-echo '<br>';
-echo '<br>';
+echo '<br>'.'<br>'.'練習問題１'.'<br>';
+echo 'なんだチミは！！！！';
+echo '<br>'.'練習問題2'.'<br>';
+$tasizan='4+5=9';
+echo $tasizan;
+echo '<br>'.'練習問題3'.'<br>';
+
+for($i=0;$i<=50;$i++){
+    if($i % 2 !== 0){     
+        continue;
+    }
+    echo $i;
+    echo '<br>';
+}
+echo '<br>'.'練習問題５'.'<br>';
+$tokyo ='東京';
+echo '「2020年のオリンピック開催地',$tokyo,'です。」'; //セミコロンつけ忘れおおすぎ！！エラー出たらセミコロンあるか確認！！
+echo '<br>'.'練習問題６'.'<br>';
+$test=70;
+echo $test;
+if($test>80){
+    echo '優';
+}elseif($test>=65 || $test<80){
+    echo '良';
+}elseif($test>=65 || $test<=50){
+    echo '可';
+}else('不可');
+echo '<br>'.'練習問題７'.'<br>';
+$seiseki = 90;
+echo "結果は{$seiseki}点です";
+switch($seiseki){
+    case($seiseki>=90);
+    echo 'パーフェクトです';
+    break;
+    case($seiseki>=70);
+    echo '素晴らしい';
+    break;
+    case($seiseki>=50);
+    echo '合格です';
+    break;
+    echo '頑張りましょう';
+
+}
+echo '<br>'.'練習問題７'.'<br>';
+$uma =['ディープインパクト','トウカイテイオー','スペシャルウィーク','スーパークリーク','メジロマックイーン','ダイユウサク','オグリキャップ','ウォッカ','ダイワスカーレット'];
+$count=count($uma);
+echo '<br>'.'出馬馬は'.$count.'頭です。'.'<br>';
+for($i=0;$i<=$count;$i++){
+echo'・'.$uma[$i].'<br>';
+}
+echo '<br>'.'練習問題8'.'<br>';
 ?>
